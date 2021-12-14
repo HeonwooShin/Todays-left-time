@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica;
+    text-align: center;
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+    background-color: black;
+    animation: glitch 120s alternate infinite ease-in-out;
+    user-select:none;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: rgba(255,0,0,0.5) 0 0 2px,
+        rgba(0,255,255,0.5) 0 0 2px;
+    }
+    25% {
+        text-shadow: rgba(255,0,0,0.5) 5px 0 2px,
+        rgba(0,255,255,0.5) -5px 0 2px;
+    }
+    50% {
+        text-shadow: rgba(255,0,0,0.5) 0 0 2px,
+        rgba(0,255,255,0.5) 0 0 2px;
+    }
+    75% {
+        text-shadow: rgba(255,0,0,0.5) -5px 0 2px,
+        rgba(0,255,255,0.5) 5px 0 2px;
+    }
+}
+
+#title {
+    font-size: 5vw;
+    margin-top: 15vh;
+}
+
+#time {
+    font-size: 10vw;
+}
+
+#time:hover {
+    cursor: pointer;
+}
+
+#progress {
+    height: 1vw;
+    width: 60vw;
+    
+    /* border-radius: 1; */
+}
+
+img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    filter: blur(10px) brightness(0.7)
+}
+
+/* .container {
+    border: white solid 5px;
+} */
