@@ -10,20 +10,24 @@ body {
 
 @keyframes glitch {
     0% {
-        text-shadow: rgba(255,0,0,0.5) 0 0 2px,
-        rgba(0,255,255,0.5) 0 0 2px;
+        text-shadow: rgba(255,0,0,0.5) 0 0 0.1vw,
+        rgba(0,255,255,0.5) 0 0 0.1vw;
     }
     25% {
-        text-shadow: rgba(255,0,0,0.5) 5px 0 2px,
-        rgba(0,255,255,0.5) -5px 0 2px;
+        text-shadow: rgba(255,0,0,0.5) 0.3vw 0 0.1vw,
+        rgba(0,255,255,0.5) -0.3vw 0 0.1vw;
     }
     50% {
-        text-shadow: rgba(255,0,0,0.5) 0 0 2px,
-        rgba(0,255,255,0.5) 0 0 2px;
+        text-shadow: rgba(255,0,0,0.5) 0 0 0.1vw,
+        rgba(0,255,255,0.5) 0 0 0.1vw;
     }
     75% {
-        text-shadow: rgba(255,0,0,0.5) -5px 0 2px,
-        rgba(0,255,255,0.5) 5px 0 2px;
+        text-shadow: rgba(255,0,0,0.5) -0.3vw 0 0.1vw,
+        rgba(0,255,255,0.5) 0.3vw 0 0.1vw;
+    }
+    100% {
+        text-shadow: rgba(255,0,0,0.5) 0 0 0.1vw,
+        rgba(0,255,255,0.5) 0 0 0.1vw;
     }
 }
 
