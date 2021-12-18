@@ -15,9 +15,9 @@ function getTime(){
 function displayTime() {
     getTime();
     if (clockType == 1){
-        clock.innerHTML = `${24-hour > 9 ? 24-hour : `0${24-hour}`}
-        : ${60-minute > 9 ? 60-minute : `0${60-minute}`}
-        : ${60-second > 9 ? 60-second : `0${60-second}`}`
+        clock.innerHTML = `${23-hour > 9 ? 23-hour : `0${23-hour}`}
+        : ${59-minute > 9 ? 59-minute : `0${59-minute}`}
+        : ${59-second > 9 ? 59-second : `0${59-second}`}`
 
     } else if (clockType == 2) {
         clock.innerHTML = `${24*60*60 - hour*60*60 - minute*60 - second}s`
